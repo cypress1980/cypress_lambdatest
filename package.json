@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:report": "npm cypress run"
+    "cy:report": "cypress run"
   },
   "author": "Kailash Pathak",
   "license": "ISC",
