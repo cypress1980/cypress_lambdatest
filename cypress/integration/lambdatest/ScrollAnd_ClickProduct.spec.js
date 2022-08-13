@@ -13,6 +13,6 @@ it("Click on Lambdatest Logo", () => {
   cy.get('[title="Poco Electro"]').click();
   cy.wait(5000);
 });
-it("Scroll to bottom and Click on Product Verify prooduct 'iPod Touch' ", () => {
+it.skip("Scroll to bottom and Click on Product Verify prooduct 'iPod Touch' ", () => {
   cy.get('[title="iPod Touch"]').eq(0).scrollIntoView().click();
 });
