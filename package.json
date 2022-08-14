@@ -9,6 +9,6 @@
   "author": "Kailash Pathak",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.2.0"
+    "cypress": "^9.7.0"
   }
 }

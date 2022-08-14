@@ -4,23 +4,23 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  - master
 
 pool:
   vmImage: ubuntu-latest
 variables:
-  LT_USERNAME: 'kailashpathak'
-  LT_ACCESS_KEY: 'q7jalm42muIxCIYfpMay9M3UkcCcPit6x2yB58MgMbxlNsSfY6'
+  LT_USERNAME: "kailashpathak"
+  LT_ACCESS_KEY: "q7jalm42muIxCIYfpMay9M3UkcCcPit6x2yB58MgMbxlNsSfY6"
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "10.x"
+    displayName: "Install Node.js"
 
-- script: |
-    npm install
-    npm install -g lambdatest-cypress-cli
-    npm install -g cypress@9.2.0
-    npm run cy:report
-  displayName: 'npm install and build'
+  - script: |
+      npm install
+      npm install -g lambdatest-cypress-cli
+      npm install -g cypress@9.7.0
+      npm run cy:report
+    displayName: "npm install and build"
