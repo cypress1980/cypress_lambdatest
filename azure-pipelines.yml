@@ -20,7 +20,5 @@ steps:
 
   - script: |
       npm install
-      npm install -g lambdatest-cypress-cli
-      npm install -g cypress@9.7.0
       npm run cy:report
     displayName: "npm install and build"
