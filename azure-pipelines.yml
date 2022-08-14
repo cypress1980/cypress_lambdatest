@@ -8,6 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+variables:
+  LT_USERNAME: 'kailashpathak'
+  LT_ACCESS_KEY: 'q7jalm42muIxCIYfpMay9M3UkcCcPit6x2yB58MgMbxlNsSfY6'
 
 steps:
 - task: NodeTool@0
@@ -18,4 +21,5 @@ steps:
 - script: |
     npm install
     npm run build
+    npm run cy:report
   displayName: 'npm install and build'
