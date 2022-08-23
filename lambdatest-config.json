@@ -28,7 +28,7 @@
   "run_settings": {
     "cypress_config_file": "cypress.json",
     "build_name": "build-name",
-    "parallels": 2,
+    "parallels": 4,
     "specs": "./cypress/integration/lambdatest/*.spec.js",
     "ignore_files": "",
     "feature_file_suppport": false,
