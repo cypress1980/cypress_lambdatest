@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:report": "cypress run"
+    "cy:report": "lambdatest-cypress run --sync=true"
   },
   "author": "Kailash Pathak",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.2.0"
+    "cypress": "^9.7.0"
   }
 }
