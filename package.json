@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:report": "lambdatest-cypress run --sync=true"
+    "cy:report": "lambdatest-cypress run"
   },
   "author": "Kailash Pathak",
   "license": "ISC",
